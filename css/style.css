@@ -1,0 +1,60 @@
+body {
+  font-family: 'B612 Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/ships-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrap {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title {
+  margin-top: 0;
+  background-color: #D66641;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #EBB582;
+}
+
+
+.btn {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-color: #AEA293;
+}
+
+.btn.damaged {
+  background-color: #EBB582;
+}
+
+.btn.past {
+  background-color: #91CCEC;
+}
+
+.field-result {
+  width: 250px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 30px;
+  background-color: #D66641;
+  border-radius: 5px;
+  border: 1px solid #EBB582;
+}

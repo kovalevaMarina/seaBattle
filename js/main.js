@@ -47,8 +47,17 @@ function checkShip(e) {
     elem.innerHTML = "🌊";
     resultText.textContent = "Мимо";
   }
+  isGameOver(ships, ".damaged");
 }
 
 buttons.forEach(function (button) {
   button.addEventListener("click", checkShip, { once: true });
 });
+
+function isGameOver(arr, classElement) {
+  var arrLenght = arr.length;
+  var damagedElem = document.querySelectorAll(classElement).length;
+  if (arrLenght == damagedElem) {
+    resultText.textContent = "Игра окончена!";
+  }
+}
